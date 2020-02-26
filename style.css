@@ -44,6 +44,7 @@ body{
 
     .parrafo
     {
+        margin-top: 70px;
         width: 220px;
         font-size: 18px;
         color: aliceblue;
@@ -51,6 +52,7 @@ body{
 
     .contact
     {
+        margin-top: 80px;
         background: none;
         color: #fff;
         padding: 12px 90px;

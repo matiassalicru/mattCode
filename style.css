@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    font-family: 'Dancing Script';
+}
 
 .container
 {
@@ -5,83 +9,62 @@
     flex-direction: column;
     background: grey;
     height: 100%;
-    font-family: 'Prompt';
+    
 }
 
 .head
 {
-    margin: 0px 4px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
-    height: 200px;
+    height: 730px;
     width: auto;
-    background-image: url(head.jpg);
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(back.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-        
-    .head:hover
-    {
-        background-image: url(head2.jpg);
-    }
 
-    .social
-    {
-        margin: 4px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        /* background: #f1f1f1; */
-    }
-
-        .parrafo
-        {
-            margin: 15px;
-            font-size: 8px;
-            color: aliceblue;
-        }
-
-            .hey
-            {
-                margin-bottom: 65px;
-            }
-
-        .links
-        {
-            margin: 4px;
-            display: flex;
-            flex-direction: row;
-        }
-
-            .link
-            {
-                /* background: grey; */
-                margin: 0px 8px;
-                padding: 5px 10px;
-                color: rgb(189, 189, 189);
-            }
-
-    .profile
+    .logo
     {
         display: flex;
-        flex-direction: column;
-        margin-right: 20px;
-        margin-bottom: 15px;
-        background: #dfdfdf;
-        border: 2px double #5c5c5c;
-        text-align: center;
-        font-size: 8px;
+        justify-content: center;
+        align-items: center;
+        height: 50px ;
+        width: 100%;
     }
 
-        #img
+        img
         {
-            height: 100px;
+            height: 60px;
             width: auto;
         }
+
+    .parrafo
+    {
+        width: 220px;
+        font-size: 18px;
+        color: aliceblue;
+    }
+
+    .links
+    {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        /* background: #dfdfdf; */
+    }
+
+        .link
+        {
+            margin: 15px;
+            padding: 25px;
+            /* background: #5c5c5c; */
+            color: rgb(255, 255, 255);
+        }
+
 
 .main
 {
@@ -108,12 +91,13 @@
 
         .projects:hover
         {
-            background: #d3f4ff;
+            background: #d8b4f0;
         }
 
         .title
         {
             margin: 5px;
+            font-size: 28px;
         }
 
         .img

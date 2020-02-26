@@ -9,7 +9,7 @@ body{
     flex-direction: column;
     background: grey;
     height: 100%;
-    
+    margin: 0;
 }
 
 .head
@@ -49,9 +49,24 @@ body{
         color: aliceblue;
     }
 
+    .contact
+    {
+        background: none;
+        color: #fff;
+        padding: 12px 90px;
+        border-radius: 50px;
+        border: 1px solid;
+        cursor: pointer;
+        transition: 0.8s;
+    }
+
+     .contact:hover
+     {
+         border: 1.5px ;
+     }
+
     .links
     {
-        margin-top: 20px;
         display: flex;
         flex-direction: row;
         /* background: #dfdfdf; */
@@ -59,12 +74,19 @@ body{
 
         .link
         {
-            margin: 15px;
-            padding: 25px;
+            margin-top: 150px;
+            padding: 0px 25px;
             /* background: #5c5c5c; */
             color: rgb(255, 255, 255);
         }
 
+    .sign
+    {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-left: 190px;
+    }
 
 .main
 {
@@ -72,7 +94,7 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0px 10px;
+    margin: 0px 0px;
     margin-bottom: 10px;
     align-items: center;
     justify-content: center;
@@ -83,26 +105,32 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 1px;
-        width: 97%;
+        width: 100%;
         background: #dfdfdf;
         transition: 0.9s;
     }
 
-        .projects:hover
-        {
-            background: #d8b4f0;
-        }
-
         .title
         {
-            margin: 5px;
+            margin-top: 20px;
             font-size: 28px;
+        }
+
+        .text
+        {
+            margin-left: 25px;
+            margin-right: 25px;
         }
 
         .img
         {
-            margin: 5px;
-            height: 100px;
+            margin-bottom: 20px;
+            height: 150px;
             width: auto;
         }
+
+            .img:hover
+            {
+                border: 2px ridge;
+                height: 160px;
+            }

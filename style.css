@@ -86,6 +86,28 @@ body{
         margin-left: 190px;
     }
 
+.about
+{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+    .about-title
+    {
+        font-family: 'Crimson Text';
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .about-text
+    {
+        font-family: 'Abel';
+        margin: 15px;
+    }
+
 .main
 {
     background: #5c5c5c;
@@ -116,10 +138,12 @@ body{
         {
             font-family: 'Crimson Text';
             margin-top: 20px;
+            text-decoration: underline;
         }
 
         .text
         {
+            text-align: center;
             font-family: 'Abel';
             margin-left: 25px;
             margin-right: 25px;

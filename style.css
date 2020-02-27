@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Dancing Script';
+    background: #5c5c5c;
 }
 
 .container
@@ -17,7 +18,7 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 730px;
+    height: 740px;
     width: auto;
     justify-content: space-around;
     align-items: center;
@@ -44,15 +45,13 @@ body{
 
     .parrafo
     {
-        margin-top: 70px;
         width: 220px;
-        font-size: 18px;
+        font-size: 22px;
         color: aliceblue;
     }
 
     .contact
     {
-        margin-top: 80px;
         background: none;
         color: #fff;
         padding: 12px 90px;
@@ -71,14 +70,11 @@ body{
     {
         display: flex;
         flex-direction: row;
-        /* background: #dfdfdf; */
     }
 
         .link
         {
-            margin-top: 150px;
             padding: 0px 25px;
-            /* background: #5c5c5c; */
             color: rgb(255, 255, 255);
         }
 
@@ -96,7 +92,7 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0px 0px;
+    margin-top: 10px;
     margin-bottom: 10px;
     align-items: center;
     justify-content: center;
@@ -107,19 +103,24 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
-        background: #dfdfdf;
+        width: 90%;
+        height: 100%;
+        background: #333;
         transition: 0.9s;
+        color: #fff;
+        border-radius: 15px 15px 0 0;
+        box-shadow: 6px 6px 3px #333;
     }
 
         .title
         {
+            font-family: 'Crimson Text';
             margin-top: 20px;
-            font-size: 28px;
         }
 
         .text
         {
+            font-family: 'Abel';
             margin-left: 25px;
             margin-right: 25px;
         }
@@ -128,7 +129,7 @@ body{
         {
             margin-bottom: 20px;
             height: 150px;
-            width: auto;
+            width: 300px;
         }
 
             .img:hover

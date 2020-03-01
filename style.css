@@ -1,14 +1,13 @@
 body{
     margin: 0;
     font-family: 'Dancing Script';
-    /* background: #5c5c5c; */
+    background: #5c5c5c;
 }
 
 .container
 {
     display: flex;
-    flex-direction: column;
-    background: grey;
+    flex-direction: column;    
     height: 100%;
     margin: 0;
 }
@@ -18,7 +17,7 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 740px;
+    height: 785px;
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -28,23 +27,43 @@ body{
     background-repeat: repeat-x;
 }
 
-    .logo
+    .headContainer
     {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
-        height: 50px ;
-        width: 100%;
-    }
-
-        img
+        justify-content: center;
+    }    
+    
+        .logo
         {
-            height: 60px;
-            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px ;
+            width: 100%;
         }
+
+            .sign
+            {
+            margin-top: 30px;  
+            }
+
+            .link
+            {
+                margin-top: 30px;
+            }
+
+                #link-icon
+                {
+                    height: 30px;
+                    width: auto;
+                }
 
     .parrafo
     {
+        margin: 35px 0px;
         width: 220px;
         font-size: 22px;
         color: aliceblue;
@@ -95,6 +114,7 @@ body{
     background: #fff;
     margin: 5px;
     border-radius: 15px;
+    position: relative;
 }
 
     .about-title
@@ -106,21 +126,40 @@ body{
 
     .about-text
     {
+        text-align: center;
         font-family: 'Abel';
         margin: 15px;
     }
 
+    .degree-title
+    {
+        margin-top: -30px;
+        font-family: 'Crimson Text';
+        text-align: center;
+        text-decoration: underline;
+    }
+
+   
+.mains
+{
+  /* background: #5c5c5c; */
+}
+
 .main
 {
-    background: #5c5c5c;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 10px;
     margin-bottom: 10px;
     align-items: center;
     justify-content: center;
 }
+
+    .line
+    {
+        width: 100%;
+        background: #9ecae4;
+    }
 
     .projects
     {
@@ -129,9 +168,9 @@ body{
         align-items: center;
         width: 90%;
         height: 100%;
-        background: #333;
+        background: #d2c5f5;
         transition: 0.9s;
-        color: #fff;
+        color: rgb(95, 95, 95);
         border-radius: 15px 15px 0 0;
         box-shadow: 6px 6px 3px #333;
     }
@@ -158,12 +197,6 @@ body{
             width: 300px;
         }
 
-            .img:hover
-            {
-                border: 2px ridge;
-                height: 160px;
-            }
-
 @media(min-width: 770px)
 {
 
@@ -172,47 +205,125 @@ body{
         background: none;
     }
 
-    .head
+    .mains
     {
-        width: auto;
-        margin-top: 20px;
-        margin-inline: 20px;
-        height: 650px;
-        position: fixed;
-        border-radius: 20px;
-        z-index: -1;
+        position: absolute;
+        z-index: 2;
     }
 
-    .head-container
+    .head
     {
-        
+        background: none;
+        margin-top: 10px;
     }
+
+        .headContainer
+        {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            background-image: url(back.jpg);
+            background-position: center;
+            margin: 15px;
+            border-radius: 25px;
+            height: 720px;
+        }
 
         .logo
         {
-            margin-top: 25px;
+            margin: 40px 0px;
         }
-
+      
         .links
         {
             margin-top: 20px;
         }
 
-    .parrafo
+            .link
+            {
+                margin-inline: 25px;
+            }
+                
+            #link-icon
+            {
+                height: 40px;
+                width: auto;
+            }
 
-    {
-        text-align: center;
-        margin: 50px;
-        width: 50%;
-        font-size: 32px;
-    }
+        .sign
+        {
+            margin-top: -30px;
+            font-size: 24px;
+            margin-left: 65%;
+        }
 
+           
+        .parrafo
+        {
+            text-align: center;
+            margin-top: -55px;
+            margin-bottom: 40px;
+            width: 50%;
+            font-size: 32px;
+        }
+            
     .about
     {
         margin-bottom: 20px;
-        margin-top: 720px;
+        margin-top: -60px;
         margin-inline: 60px;
         box-shadow: 10px 8px 10px 10px #333;
     }
 
+        .about-title
+        {
+            font-size: 28px;
+        }
+
+        .about-text
+        {
+            font-size: 24px;
+        }
+
+        .degree-title
+        {
+            font-size: 28px;
+        }
+
+    .projects
+    {
+
+    }
+
+        .title
+        {
+            font-size: 42px;
+        }
+
+        .text
+        {
+            width: 40%;
+            font-size: 24px;
+        }
+
+            .text:hover
+            {
+                color: #000;
+            }
+
+        .img
+        {
+            margin-bottom: 20px;
+            height: 366px;
+            width: 650px;
+            transition: 0.1s;
+        }
+
+            .img:hover
+            {
+                height: 422px;
+                width: 750px;
+            }
 }

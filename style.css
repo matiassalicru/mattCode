@@ -41,7 +41,7 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 50px ;
+            height: auto ;
             width: 100%;
         }
 
@@ -220,7 +220,7 @@ body{
                 margin: 15px;
                 padding: 70px;
                 border-radius: 2px;
-                background-image: url(/10-MobileFirst/profile.jpg);
+                background-image: url(profile.jpg);
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -246,18 +246,20 @@ body{
             .form-input
             {
                 width: 90%;
+                height: 45px;
                 margin: 5px;
                 border: 1px solid #5c5c5c;
                 border-radius: 5px;
                 box-shadow: 1px 1px 5px 1px;
                 background: none;
+
             }
 
             .form-message
             {
                 width: 90%;
                 margin: 5px;
-                padding-bottom: 25px;
+                padding-bottom: 70px;
                 border: 1px solid #5c5c5c;
                 border-radius: 5px;
                 box-shadow: 1px 1px 5px 1px;
@@ -266,11 +268,13 @@ body{
 
             .form-button
             {
-                width: 30%;
+                font-family: 'Abel';
+                text-align: center;
+                width: 50%;
+                height: 60px;
                 margin: 15px;
                 border-radius: 15px;
                 border: 1px solid #5c5c5c;
-                padding-block: 5px;
                 background: none;
             }
     
@@ -287,7 +291,6 @@ body{
         width: auto;
         margin-inline: 60px;
         box-shadow: 10px 8px 10px 10px #333;
-        margin-bottom: 200px;
     }
 
     .mains
@@ -413,4 +416,20 @@ body{
                 height: 591px;
                 width: 1050px;
             }
+
+    .contact-form
+    {
+        background: #fff;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: auto;
+        margin-inline: 60px;
+        margin-top: 15px;
+    }
+
+        .form-input
+        {
+            width: 100%;
+        }
+
 }

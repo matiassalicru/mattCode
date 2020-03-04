@@ -163,7 +163,9 @@ body{
     .line
     {
         width: 100%;
-        background: #9ecae4;
+        height: 1px;
+        background: rgba(141, 141, 141, 0.322);
+        border: none;
     }
 
     .projects
@@ -200,11 +202,10 @@ body{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        background: rgba(255, 255, 255, 0.815);
-        height: auto;
+        background: #fff;
+        margin: 15px;
         width: auto;
         border-radius: 10px;
-        margin: 5px;
     }
 
         .polaroid
@@ -235,32 +236,47 @@ body{
         .form
         {
             display: flex;
-            flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            margin-top: 20px;
+            margin: 20px;
         }
 
             .form-input
             {
                 font-family: 'Abel';
-                width: 90%;
+                width: 80%;
                 height: 45px;
-                margin: 5px;
+                margin-bottom: 40px;
                 background: none;
-
+                border: none;
+                border-bottom: 1px ridge;
+                border-radius: 3px;
+                transition: .5s;
             }
+
+                .form-input:focus
+                {
+                    width: 100%;
+                }                
 
             .form-message
             {
                 font-family: 'Abel';
-                width: 90%;
-                margin: 5px;
-                padding-bottom: 70px;
+                width: 80%;
+                padding-bottom: 50px;
                 background: none;
+                border: none;
+                border-bottom: 1px ridge;
+                border-radius: 3px;
+                margin-bottom: 15px;
+                transition: 0.5s;
             }
+
+                .form-message:focus
+                {
+                    width: 140%;
+                }
 
             .form-button
             {
@@ -275,9 +291,16 @@ body{
                 border-right: 1px solid;
                 border-bottom: 1px solid;
                 box-shadow: 5px 5px 6px 0px #5c5c5c4d;
+                transition: width 0.5s, background 1s;
             }
+
+                .form-button:hover
+                {
+                    width: 90%;
+                    background: #b5a5e083;
+                }
     
-@media screen and (min-width: 770px) and (max-width: 1000px)
+@media screen and (min-width: 1000px)
 {
 
     body
@@ -562,29 +585,3 @@ body{
             margin: 50px;
         }
 }
-
-/* @media screen and (min-width: 1000px) and (max-width:)
-{   
-    #contact-form
-    {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: auto;
-    }
-
-    .lineV
-    {
-        display: none;
-    }
-
-        .polaroid
-        {
-            margin: 20px auto;
-        }
-
-        .div-form
-        {
-            margin: auto;
-        }
-} */

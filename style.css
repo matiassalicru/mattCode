@@ -21,7 +21,7 @@ body{
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    background-image: url(back.jpg);
+    background-image: url(./imagenes/back.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: repeat-x;
@@ -219,7 +219,7 @@ body{
                 margin: 15px;
                 padding: 70px;
                 border-radius: 2px;
-                background-image: url(profile.jpg);
+                background-image: url(./imagenes/profile.jpg);
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -378,7 +378,7 @@ body{
             display: flex;
             flex-flow: column wrap;
             position: fixed;
-            background-image: url(back.jpg);
+            background-image: url(./imagenes/back.jpg);
             background-position: center;
             margin: 15px;
             border-radius: 10px;

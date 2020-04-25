@@ -1,6 +1,5 @@
 body{
     margin: 0;
-    font-family: 'Dancing Script';
     background: #5c5c5c;
 }
 
@@ -24,7 +23,6 @@ body{
     background-image: url(./imagenes/back.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: repeat-x;
 }
 
     .headContainer
@@ -48,6 +46,7 @@ body{
             .sign
             {
             margin-top: 30px;  
+            font-family: 'Dancing Script';
             }
 
             .link
@@ -61,12 +60,13 @@ body{
                     width: auto;
                 }
 
-    .parrafo
+    .intro
     {
         margin: 35px 0px;
         width: 220px;
         font-size: 22px;
         color: aliceblue;
+        font-family: 'Dancing Script';
     }
 
     .contact
@@ -77,14 +77,15 @@ body{
         color: #fff;
         padding: 12px 90px;
         border-radius: 50px;
-        border: 1px solid;
+        border: 1.5px solid;
         cursor: pointer;
-        transition: 0.8s;
+        transition: 0.5s;
     }
 
      .contact:hover
      {
-         border: 2.5px solid #9ecae4;
+         border: 1.5px solid #9ecae4;
+         /* background: #dcb1fd; */
      }
 
     .links
@@ -119,7 +120,10 @@ body{
 
     .about-title
     {
-        font-family: 'Crimson Text';
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 24px;
         text-align: center;
         text-decoration: underline;
     }
@@ -139,6 +143,26 @@ body{
         text-decoration: underline;
     }
 
+    .skillsPrograms{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .skills .list
+        {
+            list-style-image: url(./imagenes/tilde2.png);
+            padding-left: 45px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        
+
 
 .mains
 {
@@ -150,7 +174,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #d2c5f5;
+    background: #e9e3ff;
+    /* background: #d2c5f5; */
     transition: 0.9s;
     color: rgb(95, 95, 95);
     border-radius: 15px 15px 10px 10px;
@@ -212,8 +237,13 @@ body{
             margin-bottom: 20px;
             padding-bottom: 1px;
             border: 1px solid #5c5c5cb4;
+            border-radius: 3px;
             background: #fff;
-        }
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+}
             .profile
             {
                 margin: 15px;
@@ -228,6 +258,8 @@ body{
             .polaroid-text
             {
                 text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-style: italic;
             }
 
 .lineV
@@ -263,7 +295,11 @@ body{
                 border-bottom: 1px ridge;
                 border-radius: 3px;
                 transition: .5s;
-            }
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+}
 
                 .form-input:focus
                 {
@@ -280,8 +316,16 @@ body{
                 border-bottom: 1px ridge;
                 border-radius: 3px;
                 margin-bottom: 15px;
-                transition: 0.5s;
-            }
+                transition: all 0.5s;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+}
 
                 .form-message:focus
                 {
@@ -370,7 +414,7 @@ body{
     .head
     {
         background: none;
-        margin-top: 1px;
+        margin-top: -20px;
     }
 
         .headContainer
@@ -380,7 +424,7 @@ body{
             position: fixed;
             background-image: url(./imagenes/back.jpg);
             background-position: center;
-            margin: 15px;
+            margin: 0 15px;
             border-radius: 10px;
             height: 700px;
         }
@@ -420,7 +464,7 @@ body{
         }
 
            
-        .parrafo
+        .intro
         {
             text-align: center;
             margin-top: -55px;
@@ -435,21 +479,31 @@ body{
         margin-top: -100px;
         margin-inline: 60px;
         box-shadow: 10px 8px 10px 10px #333;
+        font-style: italic;
     }
 
         .about-title
         {
             font-size: 28px;
+            
         }
 
         .about-text
         {
             font-size: 24px;
+            margin: 10px 50px;
         }
 
         .degree-title
         {
             font-size: 28px;
+        }
+
+        .skillsPrograms
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
         }
 
     .projects
@@ -510,8 +564,12 @@ body{
             .profile
             {
                 padding: 170px 130px;
-                transition: 2s;
-            }
+                transition: all 2s;
+                -webkit-transition: all 2s;
+                -moz-transition: all 2s;
+                -ms-transition: all 2s;
+                -o-transition: all 2s;
+}
 
                 .profile:hover
                 {
@@ -602,8 +660,12 @@ body{
                     border-bottom: 1px solid;
                     box-shadow: 5px 5px 6px 0px #5c5c5c4d;
                     cursor: pointer;
-                    transition: width .5s, background 1s;
-                }
+                    transition: all width .5s, background 1s;
+                    -webkit-transition: all width .5s, background 1s;
+                    -moz-transition: all width .5s, background 1s;
+                    -ms-transition: all width .5s, background 1s;
+                    -o-transition: all width .5s, background 1s;
+}
 
                     .form-button:hover
                     {

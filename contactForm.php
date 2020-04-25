@@ -1,5 +1,6 @@
 <?php
 
+    //Almacena en variables los contenidos de los campos
     $email = $_POST['email'];
     $mensaje = $_POST['mensaje'];
 

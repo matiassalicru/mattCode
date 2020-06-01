@@ -41,11 +41,34 @@ contactLink.addEventListener('click', function () {
     smoothScroll("#contact-form", 1000);
 });
 
-
-//Volver arriba SmoothScroll
 var backToTop = document.querySelector('.toTop');
 
 backToTop.addEventListener('click', function () {
 
-    smoothScroll(".container", 3000);
+    smoothScroll(".mains", 1000);
 });
+
+
+//Volver arriba SmoothScroll\
+
+var backToTop = document.querySelector('.arrow');
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500 && screen.width > 1000) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
+}
+
+function paraArriba() {
+
+    backToTop.addEventListener('click', function () {
+
+        smoothScroll(".mains", 1000);
+    });
+}
+
+

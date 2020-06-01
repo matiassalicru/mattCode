@@ -3,13 +3,9 @@ body{
     background: #5c5c5c;
 }
 
-.container
-{
-    display: flex;
-    flex-direction: column; 
-    height: 100vh;
+.arrow{
+    display: none;
 }
-
 .head
 {
     display: flex;
@@ -84,7 +80,7 @@ body{
         font-family: 'Dancing Script';
     }
 
-    .container .head .headContainer .contactButton{
+    .head .headContainer .contactButton{
             border: 2px solid #e9e3ff;
             border-radius: 30px;
             padding: 10px 30px;
@@ -184,7 +180,7 @@ body{
     margin-bottom: 10px;
 }
 
-.main
+.project
 {
     display: flex;
     flex-direction: column;
@@ -291,10 +287,12 @@ body{
             justify-content: center;
             align-items: center;
             margin: 20px;
+            
         }
 
             .form-input
             {
+                color: #000;
                 font-family: 'Abel';
                 width: 80%;
                 height: 45px;
@@ -317,6 +315,7 @@ body{
 
             .form-message
             {
+                color: #000;
                 font-family: 'Abel';
                 width: 80%;
                 padding-bottom: 50px;
@@ -343,6 +342,7 @@ body{
 
             .form-button
             {
+                color: #000;
                 font-family: 'Abel';
                 text-align: center;
                 width: 50%;
@@ -380,7 +380,7 @@ body{
             font-size: 18px;
             padding-top: 10px;
             padding-bottom: 8px;
-            border: 1px solid #5c5c5c;
+            border: 1px solid #bebebe;
             border-radius: 10px;
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
@@ -431,8 +431,31 @@ body{
 
 
 /* 
-    SPACEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+    SPACE
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 1000px)
 {
 
@@ -443,7 +466,7 @@ body{
         flex-direction: column;
     }
 
-    .main
+    .project
     {
         width: auto;
         margin-right: 60px;
@@ -453,20 +476,22 @@ body{
 
     .mains
     {
-        z-index: 2;
+        z-index: 20;
         margin: auto;
+        margin-top: 90vh;
     }
 
     .head
     {
         background: none;
+        position: fixed;
     }
 
         .headContainer
         {
             display: flex;
             flex-flow: column nowrap;
-            position: fixed;
+            position: relative;
             background: rgb(245,186,237);
             background: -moz-linear-gradient(90deg, rgba(245,186,237,1) 0%, rgba(209,155,218,1) 100%);
             background: -webkit-linear-gradient(90deg, rgba(245,186,237,1) 0%, rgba(209,155,218,1) 100%);
@@ -475,6 +500,7 @@ body{
             border-radius: 10px;
             height: 98vh;
             width: 95vw;
+            z-index: -10;
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
             -ms-border-radius: 10px;
@@ -525,7 +551,8 @@ body{
             font-size: 32px;
         }
 
-        .container .head .headContainer .contactButton{
+        .head .headContainer .contactButton{
+            cursor: pointer;
             border: 2px solid #e9e3ff;
             border-radius: 30px;
             padding: 10px 30px;
@@ -544,7 +571,7 @@ body{
             -o-transition: all 0.4s;
 }
 
-        .container .head .headContainer .contactButton:hover{
+        .head .headContainer .contactButton:hover{
             box-shadow: 8px 8px 25px 0px #b39ee493;
             border-color: #b39ee4b2;
         }
@@ -552,7 +579,6 @@ body{
     .about
     {
         margin-bottom: 20px;
-        margin-top: -100px;
         margin-right: 60px;
         margin-left: 60px;
         box-shadow: 10px 8px 10px 2px #333;
@@ -694,10 +720,12 @@ body{
                 flex-wrap: wrap;
                 width: 550px;
                 height: 400px;
+                
             }
 
                 .form-input
                 {
+                    color: #000;
                     background: transparent;
                     width: 80%;
                     margin-bottom: 30px;
@@ -719,6 +747,7 @@ body{
 
                 .form-message
                 {
+                    color: #000;
                     width: 80%;
                     font-size: 20px;
                     padding-top: 5px;
@@ -806,17 +835,37 @@ body{
                 margin: auto;
             }
             
-        .foot .toTop{
-            display: flex;
-            font-size: 20px;
-            color: #a794d4;
+
+        .arrow{
+            display: none ;
+            top: 85vh;
+            left: 90vw;
+            position: fixed;
+            z-index: 1000;
+            background-color: rgb(195, 166, 204);
+            background-blend-mode: lighten;
             padding: 10px;
-            border: 1px solid;
-            border-radius: 20px;
-            text-decoration: none;
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            -ms-border-radius: 20px;
-            -o-border-radius: 20px;
+            border: 1px solid #b3b3b3;
+            box-shadow: 10px 10px 10px 5px rgba(141, 141, 141, 1);
+            transition: all 0.5s;
+            border-radius: 15px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+}
+
+        .arrow:hover{
+            background: rgb(96, 55, 121);
+            transform: scale(1.2);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+}
+
+        .arrow img{
+            height: 30px;
+            width: 30px;
         }
 }

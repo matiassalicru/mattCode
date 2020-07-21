@@ -80,7 +80,7 @@ body{
         font-size: 22px;
         color: aliceblue;
         /* font-family: 'Dancing Script'; */
-        
+
     }
 
     .head .headContainer .contactButton{
@@ -136,7 +136,7 @@ body{
     .about-title
     {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 600;
+        font-weight: 400;
         font-style: italic;
         font-size: 24px;
         text-align: center;
@@ -604,8 +604,7 @@ body{
 
         .about-title
         {
-            font-size: 28px;
-            
+            font-size: 25px;
         }
 
         .about-text
@@ -613,6 +612,14 @@ body{
             font-size: 18px;
             margin: 10px 50px;
             width: 60vw;
+        }
+
+        .about-list{
+            display: flex;
+            flex-direction: column;
+            line-height: 25px;
+            list-style-image: url(./imagenes/arrow.svg);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
         .degree-title
@@ -625,6 +632,8 @@ body{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+            margin: auto;
+            width: 100vw;
         }
 
     .project{

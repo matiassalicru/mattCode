@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap');
+
+
 body{
     margin: 0;
     background: #5c5c5c;
@@ -22,8 +29,7 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5baed",endColorstr="#d19bda",GradientType=1);
 }
 
-    .headContainer
-    {
+    .headContainer{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -31,8 +37,7 @@ body{
         justify-content: center;
     }    
     
-        .logo
-        {
+        .logo{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -40,19 +45,16 @@ body{
             width: 100%;
         }
 
-            .sign
-            {
+            .sign{
             margin-top: 30px;  
             font-family: 'Dancing Script';
             }
 
-            .link
-            {
+            .link{
                 margin-top: 30px;
             }
 
-                #link-icon
-                {
+                #link-icon{
                     height: 30px;
                     width: auto;
                     transition: all 0.5s;
@@ -60,7 +62,7 @@ body{
                     -moz-transition: all 0.5s;
                     -ms-transition: all 0.5s;
                     -o-transition: all 0.5s;
-}
+                }
 
                 #link-icon:hover{
                     transform: scale(1.2);
@@ -123,9 +125,10 @@ body{
 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: #fff;
-    margin: 5px;
-    border-radius: 15px;
+    margin: 0px;
     position: relative;
 }
 
@@ -142,8 +145,12 @@ body{
     .about-text
     {
         text-align: center;
-        font-family: 'Abel';
-        margin: 15px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 25px;
+        font-size: 15px;
+        margin: 0px 15px;
     }
 
     .degree-title
@@ -159,68 +166,78 @@ body{
         flex-direction: column;
     }
 
-    .skills
-    {
+    .skills{
         display: flex;
         flex-direction: column;
     }
 
-        .skills .list
-        {
-            list-style-image: url(./imagenes/tilde2.png);
+         .list{
+            align-self: flex-start;
+            list-style-image: url(./imagenes/arrow.svg);
             padding-left: 45px;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
-        
+        .list li{
+            margin-bottom: 10px;
+        }
 
 
-.mains
-{
-    margin-bottom: 10px;
+.mains{
+    margin-bottom: 5px;
 }
 
-.project
-{
+.project{
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #fff;
     transition: 0.9s;
     color: rgb(95, 95, 95);
-    border-radius: 15px 15px 10px 10px;
+    /* border-radius: 15px 15px 10px 10px; */
+    border: 1px solid #45454545;
     box-shadow: 10px 8px 10px 10px #333;
-    margin: 5px;
+    /* margin: 5px; */
 }
 
-    .line
-    {
+    .line{
         width: 100%;
         height: 1px;
         background: rgba(141, 141, 141, 0.322);
         border: none;
     }
 
-        .title
-        {
+        .title{
             font-family: 'Crimson Text';
             margin-top: 20px;
             text-decoration: underline;
         }
 
-        .text
-        {
+        .individual-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project-title{
+            font-size: 24px;
+            font-style: italic;
+            font-family: 'Space Mono', monospace;
+            margin-top: 10px;
+        }
+
+        .text{
             text-align: center;
             font-family: 'Abel';
+            font-size: 18px;
             margin-left: 25px;
             margin-right: 25px;
         }
 
-        .img
-        {
+        .img{
             margin-bottom: 20px;
-            height: 150px;
-            width: 300px;
+            height: 10rem;
         }
 
     #contact-form
@@ -231,9 +248,9 @@ body{
         justify-content: center;
         align-items: center;
         background: #fff;
-        margin: 5px;
+        /* margin: 5px; */
         width: auto;
-        border-radius: 10px;
+        /* border-radius: 10px; */
     }
 
         .polaroid
@@ -381,14 +398,10 @@ body{
             padding-top: 10px;
             padding-bottom: 8px;
             border: 1px solid #bebebe;
-            border-radius: 10px;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            -ms-border-radius: 10px;
-            -o-border-radius: 10px;
+            
             background: #fff;
             color: #a794d4;
-            width: 90vw;
+            width: 100vw;
         }
     
     .foot
@@ -578,9 +591,11 @@ body{
 
     .about
     {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
         margin-bottom: 20px;
-        margin-right: 60px;
-        margin-left: 60px;
         box-shadow: 10px 8px 10px 2px #333;
         font-style: italic;
     }
@@ -593,8 +608,9 @@ body{
 
         .about-text
         {
-            font-size: 24px;
+            font-size: 18px;
             margin: 10px 50px;
+            width: 60vw;
         }
 
         .degree-title
@@ -625,7 +641,7 @@ body{
         .text
         {
             width: 40%;
-            font-size: 24px;
+            font-size: 18px;
         }
 
             .text:hover
@@ -633,22 +649,17 @@ body{
                 color: #000;
             }
 
-        .img
-        {
-            margin-bottom: 20px;
-            height: 366px;
-            width: 680px;
+        .img{
+            height: 15rem;
             transition: 0.5s;
             -webkit-transition: 0.5s;
             -moz-transition: 0.5s;
             -ms-transition: 0.5s;
             -o-transition: 0.5s;
-}
+        }
 
-            .img:hover
-            {
-                height: 421px;
-                width: 750px;
+            .img:hover{
+                height: 18rem;
             }
 
     #contact-form
@@ -768,6 +779,8 @@ body{
                 .form-button
                 {
                     font-family: 'Abel';
+                    font-size: 22px;
+                    color: #454545;
                     text-align: center;
                     text-decoration: underline  ;
                     width: 80%;

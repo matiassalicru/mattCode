@@ -79,7 +79,8 @@ body{
         width: 220px;
         font-size: 22px;
         color: aliceblue;
-        font-family: 'Dancing Script';
+        /* font-family: 'Dancing Script'; */
+        
     }
 
     .head .headContainer .contactButton{
@@ -194,10 +195,8 @@ body{
     background: #fff;
     transition: 0.9s;
     color: rgb(95, 95, 95);
-    /* border-radius: 15px 15px 10px 10px; */
     border: 1px solid #45454545;
     box-shadow: 10px 8px 10px 10px #333;
-    /* margin: 5px; */
 }
 
     .line{
@@ -218,6 +217,7 @@ body{
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin: 0;
         }
 
         .project-title{
@@ -412,7 +412,7 @@ body{
         align-items: flex-start;
         box-shadow: 10px 8px 10px 10px #333;
         z-index: 999;
-        height: 60px;
+        height: 30px;
         padding-top: 10px;
     }
 
@@ -594,10 +594,12 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: auto;
         width: 90vw;
         margin-bottom: 20px;
         box-shadow: 10px 8px 10px 2px #333;
         font-style: italic;
+        border-radius: 5px;
     }
 
         .about-title
@@ -625,17 +627,28 @@ body{
             justify-content: space-evenly;
         }
 
-    .projects
-    {
-        margin-right: 60px;
-        margin-left: 60px;
-
+    .project{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-radius: 5px;
+        width: 90vw;
     }
 
-        .title
-        {
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
             color: #000;
             font-size: 42px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .individual-card{
+            margin: 0;
+            width: 100vw;
         }
 
         .text
